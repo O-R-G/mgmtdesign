@@ -29,10 +29,10 @@
 <div class = "bodyContainer mobileStudioBody">
   <?php foreach($oo->media($uu->id) as $media): ?>
     <div class = "imagesubContainer">
-      <img src="<?= m_url($media);?>">
+      <img src="<?= m_url($media);?>" style="width: 100%; height: 100%">
       <?php if($media['caption']): ?>
         <div class="imageCaptionContainer Caption">
-          <?= $media['caption']; ?>
+          <?= strip_tags($media['caption']); ?>
         </div>
       <?php endif; ?>
     </div>
