@@ -64,7 +64,7 @@
             // if image and has caption, adds caption
             if ($src == m_url($media) && $media['caption']) {
               $div = $doc->createElement("div", $media['caption']);
-              $div->setAttribute('class', 'imageCaptionContainer Caption');
+              $div->setAttribute('class', 'imageCaptionContainer caption');
               try {
                $img->parentNode->insertBefore($div, $img->nextSibling);
               } catch(\Exception $e){
@@ -83,7 +83,7 @@
       <div class = "imagesubContainer">
         <img src="<?= m_url($media);?>" style="width: 100%; height: 100%">
         <?php if($media['caption']): ?>
-          <div class="imageCaptionContainer Caption">
+          <div class="imageCaptionContainer caption">
             <?= nl2br($media['caption']); ?>
           </div>
         <?php endif; ?>
