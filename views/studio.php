@@ -32,7 +32,7 @@
       <img src="<?= m_url($media);?>" style="width: 100%; height: 100%">
       <?php if($media['caption']): ?>
         <div class="imageCaptionContainer Caption">
-          <?= nl2br($media['caption']); ?>
+          <?= $media['caption']; ?>
         </div>
       <?php endif; ?>
     </div>
