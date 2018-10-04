@@ -1,16 +1,19 @@
-<?
+<?php
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 $view = "views/";
 
-/* ------------------------------------------------------
-        handle url:
-        + /dev > gyroscope (plus hide the clock)
-        + /thx > download
-        + everything else > object-fullscreen
------------------------------------------------------- */
-
 // show the things
 require_once("views/head.php");
-require_once("views/home.php");
+
+if ($uri[1] == "contact") {
+  require_once("views/contact.php");
+} else if ($uri[1] == "studio") {
+  require_once("views/studio.php");
+} else if ($uri[1] == "work") {
+  require_once("views/work.php");
+} else {
+  require_once("views/home.php");
+}
+
 require_once("views/foot.php");
 ?>

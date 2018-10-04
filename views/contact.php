@@ -1,4 +1,5 @@
 <?php
+// random gif from .Home
   function getHomeId($oo, $root) {
     $children = $oo->children($root);
     foreach($children as $child) {
@@ -17,14 +18,10 @@
   <img src="<?= m_url($selectedGif);?>">
 </div>
 
-<div class = 'homeContainer Big Hilight'>
-  <p id='introType'>
-    <?= nl2br($oo->get($homeId)['body']); ?>
-  </p>
+<div class="bodyContainer Mono Underline">
+  <?= $item['body']; ?>
+  <br /><br />
+  <span class="mgmtVoice"><?= $item["deck"]; ?></span>
 </div>
 
 <?php include_once('navigation.php'); ?>
-<div id='tweetinstaContainer' class='indent MenuSub mobileTweetInsta'>
-  <a href='https://twitter.com/#!/MGMTdesign' target='new'>tweet tweet</a><br/>
-  <a href='https://www.instagram.com/mgmtdesign/' target='new'>instagram</a>
-</div>
