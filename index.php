@@ -7,9 +7,9 @@ require_once("views/head.php");
 
 if ($uri[1] == "contact") {
   require_once("views/contact.php");
-} else if ($uri[1] == "studio") {
+} else if ($uri[1] == "about") {
   require_once("views/studio.php");
-} else if ($uri[1] == "work") {
+} else if ($uri[1] == "projects" || $uri[1] == "research") {
   require_once("views/work.php");
 } else {
   require_once("views/home.php");
