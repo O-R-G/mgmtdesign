@@ -49,7 +49,7 @@ if (count($itemParents) > 0)
 
 	<div id='name' class='nameContainer Menu'>
 		<ul>
-			<li class = 'listActive'><a href='/'><img id='logo' src="/media/logo-vector.svg"></a><br/></li>
+			<li class = 'listActive'><a href='/'><img id='logo' src="/media/logo.png"></a><br/></li>
 		</ul>
 	</div>
 
