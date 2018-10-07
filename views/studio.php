@@ -18,13 +18,12 @@
   <img src="<?= m_url($selectedGif);?>">
 </div>
 
+<?php include_once('navigation.php'); ?>
+
 <div class="bodyContainer Mono Underline">
   <?= $item['body']; ?>
-  <br /><br />
   <span class="mgmtVoice"><?= $item["deck"]; ?></span>
 </div>
-
-<?php include_once('navigation.php'); ?>
 
 <div class = "bodyContainer mobileStudioBody">
   <?php foreach($oo->media($uu->id) as $media): ?>
