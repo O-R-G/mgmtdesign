@@ -1,0 +1,292 @@
+
+
+/* Responsive Design*/
+
+
+/* Hide on Desktop */
+
+	.mobileHide {
+		display:block;
+	}
+
+	.mobileShow {
+		display:none;
+	}
+
+
+
+/* Between iphone-portrait and ipad-portrait*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 550px) {
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+/* Show on Mobile */
+
+
+	.mobileHide {
+		display:none;
+	}
+
+	.mobileNoVisibility {
+		visibility: hidden;
+	}
+
+	.mobileShow {
+		display:block;
+	}
+
+
+
+
+/* TYPE STYLING */
+
+	.Mono {
+		font-size:45px;
+		line-height:53px;
+	}
+
+	.Caption {
+		font-size:45px;
+		line-height:53px;
+	}
+
+	.Arrowlinks a {
+	padding: 0 0 0 60px;
+	background-size: 42px;
+
+	}
+
+
+/* CONTAINERS */
+
+	.bodyContainer {
+		width:80%;
+		left:9%;
+		top: 350px;
+		padding-bottom:100px;
+		z-index:1;
+	}
+
+	.imageContainer {
+		z-index:30;
+	}
+
+
+/* Header */
+
+	.nameContainer {
+		left:9%;
+	}
+
+	#logo {
+		width:220px;
+	}
+
+	.DotLineContainer {
+		width:83%;
+		left:9%;
+		top: 150px;
+		border-top:2px solid #000;
+	}
+
+			/*changes size of gifs*/
+	.jumpContainer img[style] {
+		width:178px !important;
+		height:142px !important;
+
+	}
+
+	.jumpContainer {
+		top:7px;
+		left:70%;
+	}
+
+	.projectNameContainer img[style] {
+		width:73px !important;
+		height:73px !important;
+
+	}
+
+
+
+/*   Responsive_Navigation   */
+
+	.mobileNavBackground {
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:260px;
+		background-color:#fff;
+		z-index:50;
+	}
+
+	.navContainer {
+		width:auto;
+		left:9%;
+		top: 180px;
+		width:82%;
+	}
+
+	ol, ul, li {
+		width:auto;
+		display:inline-block;
+		/*font-size:1.8em;*/
+
+	}
+
+	.MenuSub {
+		font-size:45px;
+		line-height:53px;
+	}
+
+	.mobileIndexNav {
+		margin-left:-30px;
+	}
+
+	.mobileIndexNav li.listStatic {
+		margin-right:30px;
+	}
+
+	.listActive a[style] {
+		margin-right:35px;
+	}
+
+
+/*   NAVIGATION : Only Show active menu options   */
+
+	.staticHide .listStatic a[style] {
+		display:none !important;
+	}
+
+
+/*   NAVIGATION : Get rid of underline on list items that are not active   */
+
+	.noUnderline a[style] {
+
+		text-decoration:none !important;
+
+	}
+
+	.projectListItem {
+		display:block !important;
+		line-height:1.7em !important;
+	}
+
+	.projectListItem a[style] {
+		padding-left: 5px !important;
+	}
+
+
+
+
+/*   INDEX PAGE   */
+
+	.homeContainer.Big.Hilight {
+		left:9%;
+		top: 14%;
+		width:85%;
+		z-index:0;
+	}
+
+	#introType {
+		margin-top:100px;
+		font-size:70px;
+		line-height:85px;
+	}
+
+	#tweetinstaContainer {
+		position: relative;
+		top: 0px;
+		height:400px;
+		padding-left:9%;
+		padding-top:100px;
+		padding-bottom:100px;
+		margin-top:230px;
+		z-index:110;
+	}
+
+
+
+
+/*   STUDIO PAGE   */
+
+	.mobileStudioBody {
+		width:82%;
+	}
+
+	.mobileStudioBody img[style] {
+		width:100% !important;
+		height:100% !important;
+	}
+
+
+
+/*   WORK -- 1st and 2nd depth.   */
+
+	.mobileMediaWrapper {
+		padding-top: 30%;
+
+	}
+
+	.nextProjWrapper {
+		width: 100%;
+	}
+
+	.nextProjIMGContainer {
+		padding-left:9%;
+		padding-right:9%;
+
+	}
+
+	.nextProjectTitle {
+		padding-left: 9%;
+		padding-top: 5%;
+		padding-bottom: 15%;
+	}
+
+	.projectFooter {
+		width: auto;
+		margin-left: 9%;
+		margin-right:9%;
+		padding-bottom:10%;
+	}
+
+	.projectNameContainer img[style] {
+		visibility: visible;
+	}
+
+
+/*   WORK -- PROJECT PAGE   */
+
+	.projectPageInfo {
+		padding-top: 9%;
+		padding-bottom: 10%;
+		padding-left:9%;
+		padding-right:9%;
+
+	}
+
+	.projPageWrapper {
+		padding-top: 45%;
+	}
+
+	.projPageIMGContainer {
+		padding-bottom: 9%;
+	}
+
+	.navBackgroundProjSection {
+		height:330px;
+	}
+
+
+
+
+
+
+
+
+}
