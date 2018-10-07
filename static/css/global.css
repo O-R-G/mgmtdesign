@@ -493,11 +493,13 @@ p {
   .homeContainer {
     left: 20px;
     width: calc(100% - 40px);
+    z-index: 10;
   }
 
   .bodyContainer {
     left: 20px;
     width: calc(100% - 40px);
+    z-index: 10;
   }
 
   .imageContainer {
