@@ -25,7 +25,7 @@
   </p>
 </div>
 
-<div id='tweetinstaContainer' class='indent MenuSub mobileTweetInsta'>
+<!-- <div id='tweetinstaContainer' class='indent MenuSub mobileTweetInsta'>
   <a href='https://twitter.com/#!/MGMTdesign' target='new'>tweet tweet</a><br/>
   <a href='https://www.instagram.com/mgmtdesign/' target='new'>instagram</a>
 </div> -->
