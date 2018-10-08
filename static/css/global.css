@@ -95,8 +95,8 @@ p {
 
 .Big {
 	text-align: left;
-	font-family: "Times New Roman", "Times", monospaced;
-	/* font-family: Helvetica, Arial, sans-serif; */
+	/*font-family: "Times New Roman", "Times", monospaced;*/
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 32px;
 	line-height: 38px;
 	letter-spacing: 0pt;
@@ -500,15 +500,13 @@ p {
   .bodyContainer {
     left: 20px;
     width: calc(100% - 40px);
-    z-index: 500;
-    background-color: white;
+    z-index: 10;
   }
 
   .imageContainer {
     left: 20px;
     width: calc(100% - 40px);
-    z-index: 500;
-    background-color: white;
+    z-index: 10;
   }
 
   .sidebarContainer {
