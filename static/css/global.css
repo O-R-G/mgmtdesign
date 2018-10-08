@@ -362,6 +362,10 @@ p {
 }
 
 
+.projectCategory {
+  display: inline;
+}
+
 /* MENU */
 
 .listActive a:link {
@@ -506,8 +510,7 @@ p {
   .imageContainer {
     left: 20px;
     width: calc(100% - 40px);
-    z-index: 500;
-    background-color: white;
+    z-index: 10;
   }
 
   .sidebarContainer {
@@ -519,8 +522,8 @@ p {
     z-index: 10;
   }
 
-  .projectNameContainer {
-    color: white;
+  .projectCategory {
+    display: none;
   }
 
   #tweetinstaContainer {
