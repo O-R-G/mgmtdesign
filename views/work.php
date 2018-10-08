@@ -26,8 +26,10 @@
 
 <div class = "projectNameContainer Mono Underline Arrow mobileNoVisibility">
   <img src="<?= m_url($selectedGif);?>" style="vertical-align: middle;">
-  &nbsp;
-  <?php echo $category['name1']; ?>
+  <div class="projectCategory">
+    &nbsp;
+    <?php echo $category['name1']; ?>
+  </div>
 </div>
 
 <?php include_once('navigation.php'); ?>

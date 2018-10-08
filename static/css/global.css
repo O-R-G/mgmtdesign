@@ -361,6 +361,9 @@ p {
   padding-bottom: 15px;
 }
 
+.projectCategory {
+  display: inline;
+}
 
 /* MENU */
 
@@ -518,8 +521,8 @@ p {
     z-index: 10;
   }
 
-  .projectNameContainer {
-    color: white;
+  .projectCategory {
+    display: none;
   }
 
   #tweetinstaContainer {
