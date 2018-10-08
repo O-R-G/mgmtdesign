@@ -500,13 +500,15 @@ p {
   .bodyContainer {
     left: 20px;
     width: calc(100% - 40px);
-    z-index: 10;
+    z-index: 500;
+    background-color: white;
   }
 
   .imageContainer {
     left: 20px;
     width: calc(100% - 40px);
-    z-index: 10;
+    z-index: 500;
+    background-color: white;
   }
 
   .sidebarContainer {
