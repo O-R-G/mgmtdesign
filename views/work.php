@@ -55,10 +55,18 @@
 
           //Clone our created div
           $new_div_clone = $new_div->cloneNode();
+
           //Replace image with this wrapper div
-          $img->parentNode->replaceChild($new_div_clone,$img);
-          //Append this image to wrapper div
-          $new_div_clone->appendChild($img);
+          if ($img->parentNode->tagName == 'a') {
+            $aNode = $img->parentNode;
+            $aNodeClone = $aNode->cloneNode();
+            $aNode->parentNode->replaceChild($new_div_clone,$aNode);
+            $new_div_clone->appendChild($aNodeClone);
+            $aNodeClone->appendChild($img);
+          } else {
+            $img->parentNode->replaceChild($new_div_clone,$img);
+            $new_div_clone->appendChild($img);
+          }
 
           $src = $img->getAttribute('src');
 
@@ -67,11 +75,9 @@
             if ($src == m_url($media) && $media['caption']) {
               $div = $doc->createElement("div", $media['caption']);
               $div->setAttribute('class', 'Mono');
-              try {
-               $img->parentNode->insertBefore($div, $img->nextSibling);
-              } catch(\Exception $e){
-               $img->parentNode->appendChild($div);
-            }
+
+              $new_div_clone->appendChild($div);
+              break;
             }
           }
         }
