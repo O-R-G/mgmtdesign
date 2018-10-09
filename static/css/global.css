@@ -80,8 +80,10 @@ p {
 	text-align: left;
 	font-family: "Times New Roman", "Times", monospaced;
 	/* font-family: Helvetica, Arial, sans-serif; */
-	font-size: 16px;
-	line-height: 19px;
+	/* font-size: 16px;
+	line-height: 19px; */
+  font-size: 20px;
+	line-height: 23px;
 	letter-spacing: 0pt;
 	}
 
