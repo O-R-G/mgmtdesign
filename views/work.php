@@ -66,7 +66,7 @@
             // if image and has caption, adds caption
             if ($src == m_url($media) && $media['caption']) {
               $div = $doc->createElement("div", $media['caption']);
-              $div->setAttribute('class', 'imageCaptionContainer caption');
+              $div->setAttribute('class', 'Mono');
               try {
                $img->parentNode->insertBefore($div, $img->nextSibling);
               } catch(\Exception $e){
