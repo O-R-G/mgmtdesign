@@ -242,7 +242,8 @@ p {
 	/*left: 264px;*/
 	left: 20%;
 	z-index: 90;
-	width: 40%;
+	/* width: 40%; */
+  width: 58%;
 	}
 
 .homeContainer {
