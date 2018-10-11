@@ -240,7 +240,8 @@ p {
 	/*left: 264px;*/
 	left: 20%;
 	z-index: 90;
-	width: 40%;
+	/* width: 40%; */
+  width: 58%;
 	}
 
 .homeContainer {
@@ -503,7 +504,7 @@ p {
     padding-bottom: 100px;
   }
 
-  .bodyContainer {
+  tainer {
     left: 20px;
     width: calc(100% - 40px);
     z-index: 10;
@@ -512,6 +513,12 @@ p {
   .imageContainer {
     left: 20px;
     width: calc(100% - 40px);
+    z-index: 10;
+  }
+
+  .bodyContainer {
+    width: calc(100% - 40px);
+    left: 20px;
     z-index: 10;
   }
 
