@@ -38,12 +38,12 @@
   <?= $item['deck'] ?>
 </div>
 
-<div class = "imageContainer Mono underline">
+<div class = "imageContainer Mono Underline">
   <?php if ($body): ?>
     <div class="bodyText Body">
       <?php
         $doc = new DOMDocument();
-        $doc->loadHTML($body);
+        $doc->loadHTML('<?xml encoding="utf-8" ?>' . $body);
         $imgs = $doc->getElementsByTagName("img");
 
         //Create new wrapper div

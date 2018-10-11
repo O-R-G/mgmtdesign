@@ -450,13 +450,13 @@ p {
 	}
 
 .Underline a {
-	text-decoration: none;
+	text-decoration: underline;
 	color: #000;
 	// text-transform: uppercase;
 	}
 
 .Underline a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 	}
 
 .Underline a:active {
