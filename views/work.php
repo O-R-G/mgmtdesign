@@ -38,12 +38,12 @@
   <?= $item['deck'] ?>
 </div>
 
-<div class = "imageContainer Mono underline">
+<div class = "imageContainer Mono Underline">
   <?php if ($body): ?>
     <div class="bodyText Body">
       <?php
         $doc = new DOMDocument();
-        $doc->loadHTML($body);
+        $doc->loadHTML('<?xml encoding="utf-8" ?>' . $body);
         $imgs = $doc->getElementsByTagName("img");
 
         //Create new wrapper div
@@ -101,7 +101,7 @@
 
   <?php if ($body || count($medias) > 0): ?>
   <div class="bottomLineContainer">
-    <a href='mailto:sarah@mgmtdesign.com'>sarah@mgmtdesign.com</a><br /><br />
+    718 855 6262 / <a href='mailto:info@mgmtdesign.com'>info@mgmtdesign.com</a><br /><br />
   </div>
   <?php endif;?>
 </div>
