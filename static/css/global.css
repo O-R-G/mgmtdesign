@@ -198,8 +198,8 @@ p {
 	display: block;
 	padding-top: 10px;
 	padding-left: 20px;
-	position: absolute;
-	top:185px;
+	position: fixed;
+	top:205px;
 	}
 
 .menuContainer {
@@ -247,7 +247,7 @@ p {
 	}
 
 .homeContainer {
-	position: relative;
+	position: absolute;
 	top: 130px;
 	/* left: 192px; */
 	/*left: 264px;*/
