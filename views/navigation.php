@@ -29,7 +29,6 @@ if ($item) {
   $itemPath = array();
   $nav = build_nav_to(0, 0, '', [], 0, $oo);
 }
-var_dump($itemPath);
 
 $tempNav = array();
 
