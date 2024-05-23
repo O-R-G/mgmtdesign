@@ -18,10 +18,10 @@ function build_nav_to($itemId, $depth, $url, $needlePath, $needleId, $oo) {
   }
   return $nav;
 }
-
+// var_dump($item);
 if ($item) {
   // regular behavior
-  $itemPath = $oo->ancestors($item['id']);
+  $itemPath = $oo->ancestors($item['id'], null, true);
   array_push($itemPath, $item['id']);
   $nav = build_nav_to(0, 0, '', $itemPath, $item['id'], $oo);
 } else {
@@ -29,6 +29,7 @@ if ($item) {
   $itemPath = array();
   $nav = build_nav_to(0, 0, '', [], 0, $oo);
 }
+var_dump($itemPath);
 
 $tempNav = array();
 
