@@ -1,6 +1,7 @@
 <?php
 function build_nav_to($itemId, $depth, $url, $needlePath, $needleId, $oo) {
   $kids = $oo->children_ids_nav($itemId);
+
   if (count($kids) == 0) {
     return [];
   }
@@ -25,6 +26,7 @@ if ($item) {
   $nav = build_nav_to(0, 0, '', $itemPath, $item['id'], $oo);
 } else {
   // root behavior
+  $itemPath = array();
   $nav = build_nav_to(0, 0, '', [], 0, $oo);
 }
 

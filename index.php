@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 0);
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 $view = "views/";
 
